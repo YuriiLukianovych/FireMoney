@@ -1,0 +1,65 @@
+.header {
+    height: 70px;
+    background-color: #cfcfcf;
+    border-bottom: 1px solid #FF7B00;
+    box-shadow: 0 3px 5px #ffbe40;
+    // overflow-x: hidden
+
+    position: relative;
+
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    &-icon{
+        width: 126px;
+        height: 24px;
+    }
+}
+
+.site-navigation {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    background-color: tomato;
+    padding: 0 15px;
+
+    transition: transform 500ms ease-in-out;
+}
+
+.menu-list {}
+
+.menu-list__item {}
+
+.menu-link {}
+
+.header-btn {}
+
+.menu-button {}
+
+.menu-button-icon {
+    &.is-open .icon-menu {
+        display: none;
+    }
+    &.is-open .icon-cross {
+        display: block;
+    }
+    
+    .icon-cross {
+        display: none;
+    }
+}
+
+.icon-menu {}
+
+.icon-cross {}
+
+.show{
+    transform: translateX(-100%);
+}

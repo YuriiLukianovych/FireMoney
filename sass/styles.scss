@@ -1,23 +1,9 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+// base
+@import './base/commons';
+@import './base/container';
 
-img {
-    display: block;
-}
+// utils
+@import './utils/display-none';
 
-ul,
-ol {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-body{
-    font-family: 'Rubik', sans-serif;
-}
+// layout
+@import './layout/header';
