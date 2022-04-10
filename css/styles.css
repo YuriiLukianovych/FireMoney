@@ -111,4 +111,8 @@ body {
 .show {
   transform: scale(1) rotate(360deg);
 }
+
+.is-blocked {
+  overflow: hidden;
+}
 /*# sourceMappingURL=styles.css.map */
