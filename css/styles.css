@@ -42,10 +42,14 @@ body {
 
 .header {
   height: 70px;
-  background-color: #cfcfcf;
+  background-color: #ffbf40;
   border-bottom: 1px solid #FF7B00;
-  box-shadow: 0 3px 5px #ffbe40;
-  position: relative;
+  box-shadow: 0 3px 5px #ffbf40;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .header .container {
@@ -67,14 +71,25 @@ body {
   width: 100%;
   background-color: #995555;
   padding: 0 15px;
-  transform-origin: right center;
-  transform: scaleX(0);
-  opacity: 0;
-  transition: transform 500ms ease-out, opacity 500ms ease-out;
+  z-index: 1;
+  transform-origin: right top;
+  transform: scale(0);
+  transition: transform 500ms ease-out;
 }
 
 .menu-list {
-  padding: 40px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.menu-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.menu-link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 36px;
 }
 
 .menu-button.is-open .icon-menu {
@@ -94,7 +109,6 @@ body {
 }
 
 .show {
-  transform: scaleX(1);
-  opacity: 1;
+  transform: scale(1) rotate(360deg);
 }
 /*# sourceMappingURL=styles.css.map */

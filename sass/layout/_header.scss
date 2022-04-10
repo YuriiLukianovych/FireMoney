@@ -1,10 +1,14 @@
 .header {
     height: 70px;
-    background-color: #cfcfcf;
+    background-color: #ffbf40;
     border-bottom: 1px solid #FF7B00;
-    box-shadow: 0 3px 5px #ffbe40;
+    box-shadow: 0 3px 5px #ffbf40;
 
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 
     .container{
         height: 100%;
@@ -29,19 +33,28 @@
     background-color: rgb(153, 85, 85);
     padding: 0 15px;
 
-    transform-origin: right center;
-    transform: scaleX(0);
-    opacity: 0;
-    transition: transform 500ms ease-out, opacity 500ms ease-out;
+    z-index: 1;
+    transform-origin: right top;
+    transform: scale(0);
+    transition: transform 500ms ease-out;
 }
 
 .menu-list {
-    padding: 40px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.menu-list__item {}
+.menu-list__item {
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
 
-.menu-link {}
+.menu-link {
+    color: #fff;
+    font-weight: 600;
+    font-size: 36px;
+}
 
 .header-btn {}
 
@@ -65,6 +78,5 @@
 
 
 .show{
-    transform: scaleX(1);
-    opacity: 1;
+    transform: scale(1) rotate(360deg);
 }
