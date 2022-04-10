@@ -25,11 +25,12 @@
 .site-navigation {
     position: absolute;
     top: 100%;
-    left: 100%;
-    width: 100%;
+    left: 0;
+    width: 100vw;
     background-color: tomato;
     padding: 0 15px;
 
+    transform: translateX(100%);
     transition: transform 500ms ease-in-out;
 }
 
@@ -41,12 +42,11 @@
 
 .header-btn {}
 
-.menu-button {}
-
-.menu-button-icon {
+.menu-button {
     &.is-open .icon-menu {
         display: none;
     }
+    
     &.is-open .icon-cross {
         display: block;
     }
@@ -56,10 +56,11 @@
     }
 }
 
-.icon-menu {}
+.menu-button-icon {
+    fill: #ff7b00;
+}
 
-.icon-cross {}
 
 .show{
-    transform: translateX(-100%);
+    transform: translateX(0);
 }
