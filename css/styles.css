@@ -22,7 +22,6 @@ a {
 body {
   font-family: 'Rubik', sans-serif;
   color: #45515F;
-  overflow-x: hidden;
 }
 
 .container {
@@ -63,13 +62,19 @@ body {
 
 .site-navigation {
   position: absolute;
-  top: 100%;
+  top: 102%;
   left: 0;
-  width: 100vw;
-  background-color: tomato;
+  width: 100%;
+  background-color: #995555;
   padding: 0 15px;
-  transform: translateX(100%);
-  transition: transform 500ms ease-in-out;
+  transform-origin: right center;
+  transform: scaleX(0);
+  opacity: 0;
+  transition: transform 500ms ease-out, opacity 500ms ease-out;
+}
+
+.menu-list {
+  padding: 40px 0;
 }
 
 .menu-button.is-open .icon-menu {
@@ -89,6 +94,7 @@ body {
 }
 
 .show {
-  transform: translateX(0);
+  transform: scaleX(1);
+  opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */
