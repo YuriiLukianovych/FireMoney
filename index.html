@@ -59,7 +59,7 @@
                     </div>
                     <h1 class="hero__title">Быстрых займов по всей Украине!</h1>
                     <p class="hero__text">Без проверки кредитной истории.
-                    От 1 000 грн за 15 минут.</p>
+                    От 500 грн за 15 минут.</p>
                     <p class="hero__note">Внимание! Услуга обработки заявки платная
                     и составляет от 25 грн до 100 грн раз в неделю</p>
                 </div>
@@ -85,8 +85,26 @@
                         <img src="images/hero/girl-tablet.png" alt="girl tell">
                     </picture>
                 </div>
-                <div class="hero-form-wrap">
-                    <form action="#"></form>
+                <div class="form__wrap">
+                    <form class="form" action="#">
+                        <label for="credit-sum" class="form__label">Cумма кредита</label>
+                        <div class="range__wrapper">
+                            <div class="range__label sum-label" data-range="1"><span>32500</span> грн</div>
+                            <input type="range" class="range" name="credit-sum" id="credit-sum" min="500" max="50000" value="32500" step="100" data-range="1">
+                            <span class="range__min-value">500 грн</span>
+                            <span class="range__max-value">50 000 грн</span>
+                        </div>
+
+                        <label for="credit_term" class="form__label">Cрок кредита</label>
+                        <div class="range__wrapper">
+                            <div class="range__label term-label" data-range="2"><span>8</span><span>днів</span>
+                            </div>
+                            <input type="range" class="range" name="credit_term" id="credit_term" min="3" max="30" value="8" step="1" data-range="2">
+                            <span class="range__min-value">3</span>
+                            <span class="range__max-value">30</span>
+                        </div>
+                        <button class="btn" type="button">Оформить заявку</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -330,6 +348,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/burger-menu.js"></script>
+    <script src="js/burger-menu.js" type="module"></script>
+    <script src="js/range-input.js" type="module"></script>
 </body>
 </html>

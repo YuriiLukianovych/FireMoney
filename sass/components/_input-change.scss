@@ -1,0 +1,119 @@
+.range {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    /* Override default look in Firefox */
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    display: block; /* убрать нижний отступ инлайн элемента  */
+
+    &__wrapper {
+        width: 100%;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    &__label {
+        position: absolute;
+        top: -30px;
+        transform: translateX(-50%);
+        transition: transform 100ms, left 100ms;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1;
+        height: 24px;
+        width: max-content;
+        // background-color: tomato;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            margin-right: 5px;
+        }
+    }
+
+    &__min-value, &__max-value {
+            font-size: 13px;
+            line-height: 1.154;
+            
+            color: #C0C2C5;
+
+            position: absolute;
+            bottom: -15px;
+    }
+
+    &__min-value{
+        left: 0;
+    }
+
+    &__max-value {
+        right: 0;
+    }
+}
+
+/* thumb-position = (value - min) / (max - min) * 100% */
+.sum-label{
+    /* thumb-position = 32500 / 50000 * 100% = 65% */
+    /* (32500 - 500) / (50000 - 500) * 100% = 32000 / 49500 * 100% =  65%*/
+    left: 65%;
+}
+.term-label{
+    /* (8 - 3)/(30 - 3) * 100% = 5/27*100 =  19%*/
+    left: 19%;
+}
+
+// -------------------- скидання і перевизначення дефолтних стилів для повзунка і дорожки інпутів ----------------
+/* input range = track + thumb */
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+.range::-webkit-slider-runnable-track {
+    background-color: #ececec;
+    height: 7px;
+    border-radius: 8px;
+}
+
+/******** Firefox ********/
+.range::-moz-range-track {
+    background-color: #ececec;
+    height: 7px;
+    border-radius: 8px;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+.range::-webkit-slider-thumb {
+    /* Override default look */
+    -webkit-appearance: none;
+    appearance: none;
+    /* Centers thumb on the track */
+    /* margin-top=(track height in pixels / 2) - (thumb height in pixels /2) */
+    /* margin-top= (7/2) - (21/2) =  -7px */
+    margin-top: -7px;
+    background-color: #FFA147;;
+    
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+/***** Firefox *****/
+.range::-moz-range-thumb {
+    /* Override default look */
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    /*Removes extra border that FF applies*/
+    border-radius: 0;
+    /*Removes default border-radius that FF applies*/
+    /* In Firefox no need to center thumb - thumb centered by defoult */
+    background-color: #FFA147;;
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+}
