@@ -1,14 +1,17 @@
 // const rangeProgress = document.querySelector('.range-progress');
 const rangeList = document.querySelectorAll('input[type="range"]');
 const labelList = document.querySelectorAll('.range__label');
+const rangeProgressList = document.querySelectorAll('.range__progress');
 
 // Якщо користувач використовує браузер Firefox, то приховувати для нього блок .range-progress
 // Поверх нього не можливо поставити дефолтний повзунок(thumb) у Firefox
 // Для прогрес-лінії в input:range у Firefox(-moz) існує псевдоелемент ::-moz-range-progress
 // Саме відсутність такого псевдоелемента для -webkit змушує робити кастомний прогрес .range-progress
-// if (navigator.userAgent.indexOf('Firefox') !== -1) {
-//     rangeProgress.style.display = 'none';
-// }
+if (navigator.userAgent.indexOf('Firefox') !== -1) {
+    rangeProgressList.forEach(el => {
+        el.style.display = 'none';
+    })
+}
 
 rangeList.forEach(range => {
     range.addEventListener('input', e => {
@@ -22,6 +25,11 @@ rangeList.forEach(range => {
     // В залежності від вибраного значення value
     // 1. Встановлюємо ширину для кастомного .range-progress 
     // rangeProgress.style.width = `${e.target.value / e.target.max * 100}%`;
+    rangeProgressList.forEach(rangeProgress => {
+        if(+rangeProgress.getAttribute('data-range') === rangeNumber){
+            rangeProgress.style.width = `${thumbPosition}%`;
+        }
+    })
     
 
     // 2. Вираховуємо позицію для мітки .range-label
