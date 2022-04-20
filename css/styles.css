@@ -267,6 +267,48 @@ body {
   transform: scale(1.05);
 }
 
+.bookmark {
+  height: 0;
+  width: 94px;
+  border-bottom: 22px solid #FFC83E;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  transform: rotate(-45deg);
+  position: relative;
+}
+
+.bookmark--lite {
+  border-bottom: 22px solid #FFC83E;
+}
+
+.bookmark--basic {
+  border-bottom: 22px solid #FF7B00;
+}
+
+.bookmark--pro {
+  border-bottom: 22px solid #FA5914;
+}
+
+.bookmark span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -26px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 33px;
+  text-align: center;
+  color: #45515F;
+}
+
 .header {
   height: 70px;
   background-color: #ffbf40;
@@ -431,6 +473,10 @@ body {
   animation: fire 1500ms linear infinite;
 }
 
+.hero__info {
+  margin-bottom: 37px;
+}
+
 .hero__title {
   font-weight: 600;
   font-size: 36px;
@@ -456,7 +502,6 @@ body {
   line-height: 145.5%;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 37px;
 }
 
 @media screen and (max-width: 767px) {
@@ -475,5 +520,46 @@ body {
   100% {
     transform: scale(1) rotate(0deg);
   }
+}
+
+.best-deal {
+  background-color: #f6f9fc;
+  padding-top: 40px;
+}
+
+.best-deal__list {
+  margin-top: 32px;
+}
+
+.best-deal__item {
+  height: 172px;
+  width: 100%;
+  padding: 36px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
+  border-radius: 22px;
+  position: relative;
+}
+
+.best-deal__item .bookmark {
+  position: absolute;
+  left: -22px;
+  top: 15px;
+}
+
+.best-deal__info {
+  padding-left: 24px;
+  background-repeat: no-repeat;
+}
+
+.best-deal__info.date {
+  background-image: url(../../images/icons/calendar.svg);
+  background-position: 4px center;
+}
+
+.best-deal__info.cash {
+  background-image: url(../../images/icons/coins.svg);
+  background-size: 18px 18px;
+  background-position: left center;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+.bookmark{
+   height: 0;
+   width: 94px;
+   border-bottom: 22px solid #FFC83E;
+   border-left: 22px solid transparent;
+   border-right: 22px solid transparent;
+   transform: rotate(-45deg);
+
+   position: relative;
+
+   &--lite{
+      border-bottom: 22px solid #FFC83E;
+   }
+   &--basic{
+      border-bottom: 22px solid #FF7B00;
+   }
+   &--pro{
+      border-bottom: 22px solid #FA5914;
+   }
+
+   span{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      bottom: -26px;
+   }
+}
