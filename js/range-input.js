@@ -1,7 +1,12 @@
-// const rangeProgress = document.querySelector('.range-progress');
+
 const rangeList = document.querySelectorAll('input[type="range"]');
 const labelList = document.querySelectorAll('.range__label');
 const rangeProgressList = document.querySelectorAll('.range__progress');
+
+const calculatorStartSum = document.querySelector('.calc-start-sum');
+const calculatorFinishSum = document.querySelector('.calc-finish-sum');
+const calculatorDate = document.querySelector('.calc-date');
+const calculatorPayment = document.querySelector('.calc-payment');
 
 // Якщо користувач використовує браузер Firefox, то приховувати для нього блок .range-progress
 // Поверх нього не можливо поставити дефолтний повзунок(thumb) у Firefox
@@ -49,17 +54,54 @@ rangeList.forEach(range => {
             if (+label.getAttribute('data-range') === 2) {
                 switch (e.target.value) {
                 case "3":
-                        label.lastElementChild.textContent = 'дні';
+                        label.lastElementChild.textContent = 'дня';
                 break;
                 
                 case "4":
-                        label.lastElementChild.textContent = 'дні';
+                        label.lastElementChild.textContent = 'дня';
                 break;
 
                 default:
-                label.lastElementChild.textContent = 'днів';
+                label.lastElementChild.textContent = 'дней';
                 }
             }
         })
+        // ------------------------------- CALCULATOR --------------------------------
+
+            // calculatorStartSum
+            calculatorStartSum.textContent = `${rangeList[0].value} грн`;
+
+            // calculatorFinishSum
+            let finishSumm = +rangeList[0].value;
+            console.log(typeof finishSumm);
+            for (let i = 1; i <= +rangeList[1].value; i++) {
+                console.log(i);
+                finishSumm = finishSumm + finishSumm*0.01;
+                console.log(finishSumm);
+            }
+            calculatorFinishSum.textContent = `${Math.trunc(finishSumm)} грн`;
+
+            // calculatorDate
+            const date = new Date();
+            const endDate = date.getTime() + +rangeList[1].value*24*60*60*1000;
+            const date2 = new Date(endDate);
+            const MONTHS = {
+                0: 'января',
+                1: 'февраля',
+                2: 'марта',
+                3: 'апреля',
+                4: 'мая',
+                5: 'июня',
+                6: 'июля',
+                7: 'августа',
+                8: 'сентября',
+                9: 'октября',
+                10: 'ноября',
+                11: 'декабря'
+            }
+            calculatorDate.textContent = `${date2.getUTCDate()} ${MONTHS[date2.getUTCMonth()]} ${date2.getUTCFullYear()}`;
+
+            // calculatorPayment
+            calculatorPayment.textContent = `${Number.parseInt(calculatorFinishSum.textContent) - Number.parseInt(calculatorStartSum.textContent)} грн`;
 })
 })

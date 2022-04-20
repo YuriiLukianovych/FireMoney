@@ -98,14 +98,23 @@
 
                         <label for="credit_term" class="form__label">Cрок кредита</label>
                         <div class="range__wrapper">
-                            <div class="range__label term-label" data-range="2"><span>8</span><span>днів</span>
+                            <div class="range__label term-label" data-range="2"><span>8</span><span>дней</span>
                             </div>
                             <div class="range__progress second-range" data-range="2"></div>
                             <input type="range" class="range" name="credit_term" id="credit_term" min="3" max="30" value="8" step="1" data-range="2">
                             <span class="range__min-value">3</span>
                             <span class="range__max-value">30</span>
                         </div>
-                        <button class="btn" type="button">Оформить заявку</button>
+                        <button class="btn" type="submit">Оформить заявку</button>
+
+                        <div class="form__calculator">
+                            <ul class="form__calc-list">
+                                <li class="form__calc-list-item"><span>Вы берете</span><span class="calc-start-sum">----</span></li>
+                                <li class="form__calc-list-item"><span>К возврату</span><span class="calc-finish-sum">----</span></li>
+                                <li class="form__calc-list-item"><span>Дата возврата</span><span class="calc-date">----</span></li>
+                                <li class="form__calc-list-item"><span>Ежемесячный платеж</span><span class="calc-payment">----</span></li>
+                            </ul>
+                        </div>
                     </form>
                 </div>
             </div>
