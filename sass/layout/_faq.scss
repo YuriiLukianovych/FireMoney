@@ -53,10 +53,10 @@
       position: absolute;
       top: 31px;
       right: 18px;
-      background-image: url(../../images/icons/faq/down.svg);
+      background-image: url(../images/icons/faq/down.svg);
       transition: background-image 250ms ease-in-out;
       &--open{
-         background-image: url(../../images/icons/faq/up.svg);
+         background-image: url(../images/icons/faq/up.svg);
       }
    }
 }
