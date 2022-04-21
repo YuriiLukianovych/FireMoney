@@ -1,0 +1,25 @@
+.btn-sec{
+   border: 1px solid #C9D2DD;
+   background-color: transparent;
+   border-radius: 8px;
+   padding: 21px 31px;
+
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.186;
+   text-transform: uppercase;  
+   color: #45515F;
+
+   cursor: pointer;
+   transition: transform 300ms ease-out;
+
+   &:hover,
+   &:focus {
+      transform: scale(1.05);
+   }
+}
+
+.btn-sec--white{
+   border: 1px solid #fefefe;
+   color: #fefefe;
+}
