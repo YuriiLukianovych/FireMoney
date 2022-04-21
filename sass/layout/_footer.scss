@@ -1,0 +1,114 @@
+.footer {
+   padding-top: 32px;
+   background: linear-gradient(to right, #ffa047 0%, #ffc43f 100%);
+
+   &__title {}
+
+   .contact-list{
+      margin-top: 24px;
+   }
+   .logo{
+      display: inline-block;
+      margin: 0 auto;
+   }
+}
+
+.container {}
+
+.footer-top {}
+
+.contact-list {
+
+   &__item {
+      &:not(:last-child){
+         margin-bottom: 24px;
+      }
+   }
+   &__link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #FFFFFF;
+
+      transition: all 500ms ease-in-out;
+      &:hover, &:focus{
+         color: #ff7b00;
+         .contact-list__icon{
+            fill: #ff7b00;
+         }
+      }
+      &.mail {
+         font-weight: 400;
+         font-size: 13px;
+         line-height: 1.154;
+      }
+      &.tell {
+         font-weight: 700;
+         font-size: 22px;
+         line-height: 1.182;
+      }
+   }
+   &__icon{
+      width: 21px;
+      height: 21px;
+      fill: #fff;
+      margin-right: 12px;
+      transition: all 500ms ease-in-out;
+   }
+}
+
+.footer-navigation {}
+
+.footer-menu-list {
+
+   &__item {}
+
+   &__link {}
+}
+
+.footer-main {}
+
+.creditors {}
+
+.creditors-list {
+
+   &__item {}
+}
+
+.footer-cards {
+
+   &__title {}
+
+   &__list {}
+
+   &__item {}
+}
+
+.footer-note {}
+
+.agreements {
+
+   &__info {}
+}
+
+.footer-bottom {
+
+
+   &__left {}
+
+   &__right {}
+}
+
+.footer-icon {}
+
+.copyright {}
+
+.btn-sec {}
+
+.social-list {
+
+   &__item {}
+}
+
+.social-link {}

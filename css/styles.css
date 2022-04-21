@@ -1084,4 +1084,94 @@ body {
 .faq__btn--open {
   background-image: url(../images/icons/faq/up.svg);
 }
+
+.get-now {
+  background-color: #fefefe;
+  padding-top: 38px;
+}
+
+.get-now__note {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.335;
+  text-align: center;
+  color: #536473;
+}
+
+.get-now__img {
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/get-now/sun-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 380px 326px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .get-now__img {
+    background-image: url(../images/get-now/sun-mobile@2x.png);
+  }
+}
+
+.get-now .btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  padding-top: 32px;
+  background: linear-gradient(to right, #ffa047 0%, #ffc43f 100%);
+}
+
+.footer .contact-list {
+  margin-top: 24px;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.contact-list__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.contact-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  transition: all 500ms ease-in-out;
+}
+
+.contact-list__link:hover, .contact-list__link:focus {
+  color: #ff7b00;
+}
+
+.contact-list__link:hover .contact-list__icon, .contact-list__link:focus .contact-list__icon {
+  fill: #ff7b00;
+}
+
+.contact-list__link.mail {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.154;
+}
+
+.contact-list__link.tell {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.182;
+}
+
+.contact-list__icon {
+  width: 21px;
+  height: 21px;
+  fill: #fff;
+  margin-right: 12px;
+  transition: all 500ms ease-in-out;
+}
 /*# sourceMappingURL=styles.css.map */

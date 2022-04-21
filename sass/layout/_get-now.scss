@@ -1,0 +1,40 @@
+.get-now {
+   background-color: #fefefe;
+   padding-top: 38px;
+
+   &__note{
+      margin-top: 28px;
+      margin-bottom: 28px;
+
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.335;
+      text-align: center;
+      color: #536473;
+   }
+   &__img {
+      margin-top: 32px;
+      margin-left: auto;
+      margin-right: auto;
+
+      background-image: url(../images/get-now/sun-mobile.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: 380px 326px;
+
+      @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+      screen and (min-resolution: 192dpi) and (min-width: 320px),
+      screen and (min-resolution: 2dppx) and (min-width: 320px){
+         background-image: url(../images/get-now/sun-mobile@2x.png);
+      }
+   }
+   .btn {
+      display: block;
+      margin: 0 auto;
+   }
+}
+
+.container {}
+
+.title {}
+
