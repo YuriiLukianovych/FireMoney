@@ -1,5 +1,6 @@
-const anchors = document.querySelectorAll('[data-link]')
-console.log(anchors)
+const linksHeader = document.querySelectorAll('[data-link]')
+const linksFooter = document.querySelectorAll('[data-link-2]')
+const anchors = [...linksHeader, ...linksFooter];
 
 // получаем координаты элемента в контексте документа
 function getCoords(elem) {
