@@ -1,5 +1,4 @@
 const btnList = document.querySelectorAll('.faq__btn');
-console.log(btnList);
 
 // акордеон
 btnList.forEach(btn => {

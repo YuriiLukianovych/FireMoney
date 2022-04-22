@@ -33,9 +33,9 @@
             </a>
             <nav class="site-navigation" id="menu-container" data-menu>
                 <ul class="menu-list" data-menu-list>
-                    <li class="menu-list__item"><a href="#" class="menu-link" data-link>Почему мы?</a></li>
-                    <li class="menu-list__item"><a href="#" class="menu-link" data-link>О сервисе</a></li>
-                    <li class="menu-list__item"><a href="#" class="menu-link" data-link>Вопросы-ответы</a></li>
+                    <li class="menu-list__item"><a href="#reviews" class="menu-link" data-link>Почему мы?</a></li>
+                    <li class="menu-list__item"><a href="#service" class="menu-link" data-link>О сервисе</a></li>
+                    <li class="menu-list__item"><a href="#faq" class="menu-link" data-link>Вопросы-ответы</a></li>
                 </ul>
             </nav>
             <button class="header-btn" type="button">Вход в<span> личный</span> кабинет</button>
@@ -232,7 +232,7 @@
                 <button class="btn" type="button">Оформить заявку</button>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <h2 class="title">Почему выбирают нас</h2>
                 <ul class="reviews__list">
@@ -401,7 +401,7 @@
                 </ul>
             </div>
         </section>
-        <section class="service">
+        <section class="service" id="service">
             <div class="container">
                 <h2 class="title">О сервисе</h2>
                 <ul class="service__list">
@@ -417,7 +417,7 @@
                 </ul>
             </div>
         </section>
-        <section class="faq">
+        <section class="faq" id="faq">
             <div class="container">
                 <h2 class="title">Вопросы-ответы</h2>
                 <ul class="faq__list">
@@ -551,12 +551,12 @@
                 <div class="footer-cards">
                     <h3 class="footer-cards__title">Какие карты принимаем</h3>
                     <ul class="footer-cards__list">
-                        <li class="footer-cards__item"><img src="#" alt="card1"></li>
-                        <li class="footer-cards__item"><img src="#" alt="card2"></li>
-                        <li class="footer-cards__item"><img src="#" alt="card3"></li>
+                        <li class="footer-cards__item"><img src="images/footer/01.png" alt="card1"></li>
+                        <li class="footer-cards__item"><img src="images/footer/02.png" alt="card2"></li>
+                        <li class="footer-cards__item"><img src="images/footer/03.png" alt="card3"></li>
                     </ul>
                 </div>
-                <h3 class="footer-note">Мы явлемся обработчиками персональных данных</h3>
+                <h3 class="footer__note">Мы явлемся обработчиками <span>персональных данных</span></h3>
                 <div class="agreements">
                     <h2 class="footer__title">Соглашения и условия</h2>
                     <p class="agreements__info">Займы и кредиты предоставляются партнерами Imoneys Сredit на сумму от 3 000 до 1 000
@@ -594,16 +594,34 @@
             <div class="footer-bottom">
                 <div class="footer-bottom__left">
                     <svg class="footer-icon">
-                        <use href="./путь-к-свг-спрайту/имя-спрайта.svg#идентификатор-символа"></use>
+                        <use href="images/footer/icons/footer-sprite.svg#18"></use>
                     </svg>
                     <p class="copyright">Imoneys Сredit &copy;2015–2022 Все права на сайт защищены.</p>
                 </div>
                 <div class="footer-bottom__right">
                     <button class="btn-sec btn-sec--white" type="button">отписаться</button>
                     <ul class="social-list">
-                        <li class="social-list__item"><a href="#" class="social-link">1</a></li>
-                        <li class="social-list__item"><a href="#" class="social-link">2</a></li>
-                        <li class="social-list__item"><a href="#" class="social-link">3</a></li>
+                        <li class="social-list__item">
+                            <a href="https://youtube.com" class="social-list__link">
+                                <svg width="22" height="16" class="social-list__icon">
+                                    <use href="images/footer/icons/footer-sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://instagram.com" class="social-list__link">
+                                <svg width="19" height="19" class="social-list__icon">
+                                    <use href="images/footer/icons/footer-sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://facebook.com" class="social-list__link">
+                                <svg width="11" height="21" class="social-list__icon">
+                                    <use href="images/footer/icons/footer-sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -612,5 +630,6 @@
     <script src="js/burger-menu.js" type="module"></script>
     <script src="js/range-input.js" type="module"></script>
     <script src="js/faq-accordion.js" type="module"></script>
+    <script src="js/scroll-into-anchor.js" type="module"></script>
 </body>
 </html>

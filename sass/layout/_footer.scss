@@ -1,15 +1,37 @@
 .footer {
    padding-top: 32px;
-   background: linear-gradient(to right, #ffa047 0%, #ffc43f 100%);
+   padding-bottom: 39px;
+   background: url(../images/footer/fire-main.png) calc(50% - 250px) center no-repeat,linear-gradient(to right, #ffa047 0%, #ffc43f 100%);
 
-   &__title {}
+   &__title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.167;
+      text-transform: uppercase;
+      
+      color: #FFFFFF;
+   }
+   &__note{
+      border: 1px solid #ffffff;
+      padding: 22px 58px;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #FFFFFF;
+
+      margin-bottom: 31px;
+
+      span{
+         text-decoration: underline;
+      }
+   }
 
    .contact-list{
       margin-top: 24px;
    }
    .logo{
-      display: inline-block;
-      margin: 0 auto;
+      text-align: center;
    }
 }
 
@@ -58,13 +80,47 @@
    }
 }
 
-.footer-navigation {}
+// footer-navigation
+.footer-navigation {
+   margin-top: 32px;
+   margin-bottom: 32px;
+   padding-top: 29px;
+   padding-bottom: 34px;
+   border-top: 1px solid rgba(255, 255, 255, 0.2);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 
 .footer-menu-list {
+   display: flex;
+   justify-content: space-between;
+   &__item {
+      position: relative;
+      padding-bottom: 5px;
+      &::after{
+         content: '';
+         width: 100%;
+         height: 3px;
+         background-color: #ff7b00;
+         border-radius: 1.5px;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         transform-origin: center;
+         transform: scaleX(0);
+         transition: transform 500ms ease-in-out;
+      }
+      &:hover::after{
+         transform: scaleX(1);
+      }
+   }
 
-   &__item {}
-
-   &__link {}
+   &__link {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.186;
+      color: #FFFFFF;
+      padding-bottom: 5px;
+   }
 }
 
 .footer-main {}
@@ -72,43 +128,119 @@
 .creditors {}
 
 .creditors-list {
-
-   &__item {}
+   padding-bottom: 36px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+   margin-top: 23px;
+   &__item {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 1.167;
+      
+      color: #FFFFFF;
+   }
 }
 
 .footer-cards {
 
-   &__title {}
+   &__title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.167;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: 27px;
+      margin-bottom: 19px;
+   }
 
-   &__list {}
+   &__list {
+      width: 270px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 31px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
 
    &__item {}
 }
 
-.footer-note {}
-
 .agreements {
+   margin-bottom: 34px;
 
-   &__info {}
+   &__info {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 1.167;
+      color: #ffffff;
+      &:nth-child(2){
+         margin-top: 23px;
+      }
+   }
 }
 
 .footer-bottom {
+   padding-top: 34px;
+   border-top: 1px solid rgba(255, 255, 255, 0.2);
 
+   &__left {
+      text-align: center;
+   }
 
-   &__left {}
-
-   &__right {}
+   &__right {
+      display: flex;
+   }
 }
 
-.footer-icon {}
+.footer-icon {
+   width: 45px;
+   height: 45px;
+}
 
-.copyright {}
+.copyright {
+   margin-top: 21px;
+   margin-bottom: 33px;
 
-.btn-sec {}
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.167;
+   text-align: center;
+   color: #ffffff;
+
+   width: 260px;
+   margin-left: auto;
+   margin-right: auto;
+}
 
 .social-list {
+   margin-left: 36px;
 
-   &__item {}
+   display: flex;
+   align-items: center;
+   &__item {
+      height: 27px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:not(:last-child){
+         padding-right: 23px;
+         border-right: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      &:not(:first-child){
+         padding-left: 23px;
+      }
+   }
+   
+   &__link{}
+
+   &__icon{
+      fill: #ffffff;
+      transition: all 500ms ease-in-out;
+      &:hover, &:focus{
+         fill: #ff7b00;
+         transform: scale(1.05);
+      }
+   }
 }
-
-.social-link {}
