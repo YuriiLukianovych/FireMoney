@@ -256,6 +256,16 @@ body {
   padding-top: 2px;
 }
 
+@media screen and (min-width: 768px) {
+  .form__wrap {
+    width: 430px;
+    margin-left: auto;
+  }
+  .form__calculator {
+    padding-left: 40px;
+  }
+}
+
 .btn {
   background-image: linear-gradient(81.55deg, #FFC83E 33.93%, #FF7347 73.78%);
   border-radius: 8px;
@@ -341,6 +351,12 @@ body {
 
 .title--white {
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    line-height: 45px;
+  }
 }
 
 .rating__list {
@@ -628,6 +644,39 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 130px;
+    position: relative;
+    background: url(../images/hero/sun-tablet.png) calc(50% - 170px) calc(50% + 120px) no-repeat, url(../images/footer/fire-main.png) calc(50% - 525px) center no-repeat, linear-gradient(to right, #ffa047 0%, #ffc93e 100%);
+  }
+  .hero-subtitle {
+    width: 382px;
+    padding: 15px 23px 15px 75px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-subtitle__text {
+    font-size: 22px;
+    line-height: 1.182;
+  }
+  .hero__title {
+    margin-bottom: 10px;
+  }
+  .hero__text {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .hero__image {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 390px);
+    z-index: 99;
+    pointer-events: none;
+  }
+}
+
 .best-deal {
   background-color: #f6f9fc;
   padding-top: 40px;
@@ -656,7 +705,7 @@ body {
 .best-deal__item .bookmark {
   position: absolute;
   left: -22px;
-  top: 15px;
+  top: 14px;
 }
 
 .best-deal__title {
@@ -713,6 +762,20 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .best-deal {
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
+  .best-deal__list {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .how-get-money {
   background-color: #f6f9fc;
   padding-top: 25px;
@@ -767,7 +830,7 @@ body {
   font-size: 16px;
   line-height: 1.455;
   color: #D6D3D3;
-  transition: all 500ms ease-in-out;
+  transition: all 300ms ease-in-out;
   z-index: 100;
 }
 
@@ -801,32 +864,34 @@ body {
   bottom: 50%;
   left: 35%;
   transform: translateX(-50%);
-  transition: all 500ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  display: none;
 }
 
 .how-get-money__item:nth-child(1)::after {
   height: 50%;
-  z-index: 6;
+  z-index: 3;
 }
 
 .how-get-money__item:nth-child(2)::after {
   height: 150%;
-  z-index: 5;
+  z-index: 4;
 }
 
 .how-get-money__item:nth-child(3)::after {
   height: 250%;
-  z-index: 4;
+  z-index: 5;
 }
 
 .how-get-money__item:nth-child(4)::after {
   bottom: 0;
   height: 400%;
-  z-index: 3;
+  z-index: 6;
 }
 
 .how-get-money__item:hover::after, .how-get-money__item:focus::after {
   background: linear-gradient(81.55deg, #FFC83E 33.93%, #FF9F47 73.78%);
+  display: block;
 }
 
 .how-get-money__item:hover svg,
@@ -847,13 +912,82 @@ body {
   width: 70px;
   height: 70px;
   fill: #cfd5dd;
-  transition: fill 500ms ease-in-out;
+  transition: fill 300ms ease-in-out;
 }
 
 .how-get-money__text {
   flex-grow: 1;
   padding-left: 50px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .how-get-money {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .how-get-money__list {
+    margin-top: 33px;
+    margin-bottom: 42px;
+    display: flex;
+  }
+  .how-get-money__list::before {
+    height: 7px;
+    width: 100%;
+    top: 55%;
+    left: 0;
+    transform: translateX(0);
+  }
+  .how-get-money__item {
+    height: 238px;
+    flex-direction: column;
+    flex-basis: 25%;
+  }
+  .how-get-money__item::before {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .how-get-money__item::after {
+    content: '';
+    height: 7px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translateX(0);
+    transition: all 300ms ease-in-out;
+  }
+  .how-get-money__item:nth-child(1)::after {
+    height: 7px;
+    width: 50%;
+  }
+  .how-get-money__item:nth-child(2)::after {
+    height: 7px;
+    width: 150%;
+    left: -100%;
+  }
+  .how-get-money__item:nth-child(3)::after {
+    height: 7px;
+    width: 250%;
+    left: -200%;
+  }
+  .how-get-money__item:nth-child(4)::after {
+    height: 7px;
+    width: 400%;
+    left: -300%;
+  }
+  .how-get-money__icon {
+    flex-basis: 55%;
+    width: 100%;
+  }
+  .how-get-money__text {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    text-align: center;
+  }
 }
 
 .wallet {
