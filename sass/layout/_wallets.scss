@@ -1,4 +1,4 @@
-.wallet {
+.wallets {
    padding-top: 35px;
    padding-bottom: 42px;
    background-color: rgba(255, 255, 255, 0.95);
@@ -32,7 +32,7 @@
       border-radius: 18px;
       margin-top: 18px;
       margin-left: 23px;
-      background-image: url(../images/wallet/arrow.png);
+      background-image: url(../images/wallets/arrow.png);
       background-repeat: no-repeat;
       background-position: center bottom 14px;
    }
@@ -44,5 +44,32 @@
       display: flex;
       align-items: center;
       justify-content: center;
+   }
+}
+
+
+// tablet ---------------------------- tablet -----------------------------
+
+@media screen and (min-width: 768px) {
+   .wallets{
+      padding-top: 55px;
+      padding-bottom: 46px;
+
+      &__note{
+         margin-top: 14px;
+         margin-bottom: 43px;
+      }
+      &__list{
+         margin-top: 0;
+         margin-left: 0;
+         justify-content: space-between;
+      }
+      &__item{
+         margin-top: 0;
+         margin-left: 0;
+         width: 128px;
+         height: 122px;
+         background-position: center bottom 21px;
+      }
    }
 }

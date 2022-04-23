@@ -19,7 +19,7 @@
       line-height: 21px;
       text-align: center;
       color: #FFFFFF;
-
+      
       margin-bottom: 31px;
 
       span{
@@ -27,20 +27,15 @@
       }
    }
 
-   .contact-list{
-      margin-top: 24px;
-   }
    .logo{
       text-align: center;
    }
 }
-
-.container {}
-
-.footer-top {}
-
+.footer-top{
+   padding-bottom: 32px;
+}
 .contact-list {
-
+   margin-top: 24px;
    &__item {
       &:not(:last-child){
          margin-bottom: 24px;
@@ -83,7 +78,6 @@
 // footer-navigation
 .footer-navigation {
    margin-top: 32px;
-   margin-bottom: 32px;
    padding-top: 29px;
    padding-bottom: 34px;
    border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -123,10 +117,6 @@
    }
 }
 
-.footer-main {}
-
-.creditors {}
-
 .creditors-list {
    padding-bottom: 36px;
    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -141,14 +131,13 @@
 }
 
 .footer-cards {
-
+   margin-top: 27px;
    &__title {
       font-weight: 500;
       font-size: 18px;
       line-height: 1.167;
       text-align: center;
       color: #FFFFFF;
-      margin-top: 27px;
       margin-bottom: 19px;
    }
 
@@ -232,8 +221,6 @@
          padding-left: 23px;
       }
    }
-   
-   &__link{}
 
    &__icon{
       fill: #ffffff;
@@ -241,6 +228,141 @@
       &:hover, &:focus{
          fill: #ff7b00;
          transform: scale(1.05);
+      }
+   }
+}
+
+
+// tablet -------------------------------- tablet ------------------------
+
+@media screen and (min-width: 768px) {
+   .footer{
+      padding-top: 42px;
+      padding-bottom: 49px;
+      background: url(../images/footer/fire-main.png) calc(50% - 430px) calc(100% + 100px) no-repeat,
+                  linear-gradient(to right, #ffa047 0%, #ffc43f 100%);
+
+      //footer-top ------------------
+      &-top{
+         padding-bottom: 29px;
+
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      //footer-navigation
+      &-navigation{
+         flex-basis: 100%;
+         
+         margin-top: 37px;
+         padding-top: 29px;
+         padding-bottom: 32px;
+      }
+      .footer-menu-list {
+         width: 478px;
+         margin: 0 auto;
+         &__item {}
+      
+         &__link {
+            font-size: 18px;
+            line-height: 1.167;
+         }
+      }
+
+      //contact-list
+      .contact-list{
+         margin-top: 0;
+         display: flex;
+         align-items: center;
+         &__item{
+
+            &:not(:last-child) {
+               margin-bottom: 0;
+               margin-left: 95px;
+            }
+            &:first-child{
+               order: 1;
+            }
+         }
+         &__link{
+            &.mail{
+            
+            }
+         }
+      }
+
+      // footer-main --------------------------
+      .creditors-list{
+         padding-bottom: 41px;
+         &__item {
+            font-size: 13px;
+            line-height: 15px;
+         }
+      }
+
+      // footer-cards
+      .footer-cards {
+         margin-bottom: 35px;
+         display: flex;
+         &__title {
+            margin-bottom: 0;
+            flex-basis: 20%;
+         }
+      
+         &__list {
+            margin: 0;
+         }
+      
+         &__item {}
+      }
+
+      //.footer__note
+      &__note{
+         padding: 32px 0;
+         margin-bottom: 39px;
+      }
+
+      .agreements {
+         margin-bottom: 43px;
+         &__info {
+            font-size: 13px;
+            line-height: 1.154;
+            &:last-child{
+               margin-top: 20px;
+            }
+         }
+      }
+
+      // footer-bottom ------------------
+      &-bottom{
+         padding-top: 43px;
+   
+         &__left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+      
+         &__right {
+            margin-top: 33px;
+            justify-content: center;
+         }
+         
+         .copyright {
+            margin: 0;
+            width: auto;
+            margin-left: 28px;
+         }
+         
+         .social-list {
+            &__item {}
+         
+            &__link {}
+         
+            &__icon {}
+         }
       }
    }
 }

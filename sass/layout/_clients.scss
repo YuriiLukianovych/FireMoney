@@ -66,3 +66,24 @@
       display: none;
    }
 }
+
+
+// tablet --------------------------------------- tablet --------------------------------
+
+@media screen and (min-width: 768px) {
+   .clients{
+      padding-top: 55px;
+      padding-bottom: 59px;
+
+      &__list{
+         margin-top: 37px;
+         display: flex;
+         margin-left: -15px;
+      }
+      &__item{
+         flex-basis: calc(100% / 2 - 15px);
+         margin-left: 15px;
+      }
+   }
+
+}

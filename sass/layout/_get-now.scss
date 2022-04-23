@@ -34,7 +34,31 @@
    }
 }
 
-.container {}
+// tablet ----------------------------- tablet --------------
 
-.title {}
+@media screen and (min-width: 768px) {
+   .get-now{
+      padding-top: 60px;
+
+      &__note{
+         margin-top: 26px;
+         margin-bottom: 26px;
+         font-size: 27px;
+      }
+      &__img{
+         background-image: url(../../images/get-now/sun-tablet.png);
+         background-size: 607px 326px;
+
+         @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+         screen and (min-resolution: 192dpi) and (min-width: 768px),
+         screen and (min-resolution: 2dppx) and (min-width: 768px) {
+            background-image: url(../images/get-now/sun-tablet@2x.png);
+         }
+
+         img{
+            margin: 0 auto;
+         }
+      }
+   }
+}
 

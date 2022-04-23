@@ -67,3 +67,36 @@
       display: none;
    }
 }
+
+// tablet --------------------------------------- tablet --------------------------------
+
+@media screen and (min-width: 768px) {
+   .reviews{
+      padding-top: 66px;
+      padding-bottom: 54px;
+
+      &__list{
+         margin-bottom: 39px;
+         display: flex;
+         margin-left: -15px;
+      }
+      &__item{
+         margin-left: 15px;
+         flex-basis: calc(100% / 2 - 15px);
+         padding: 51px 27px 47px 29px;
+      }
+      &__buttons{
+         display: flex;
+         justify-content: center;
+
+         .btn {
+            margin: 0;
+            margin-right: 10px;
+         }
+         
+         .btn-sec {
+            margin: 0;
+         }
+      }
+   }
+}

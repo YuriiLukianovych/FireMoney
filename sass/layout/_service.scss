@@ -30,3 +30,23 @@
       color: #536473;
    }
 }
+
+
+// tablet --------------------------------------- tablet --------------------------------
+
+@media screen and (min-width: 768px) {
+   .service{
+      padding-top: 57px;
+      padding-bottom: 48px;
+
+      &__list{
+         margin-top: 42px;
+      }
+      &__item{
+         padding: 44px 52px 47px 48px;
+      }
+      &__title{
+         margin-bottom: 31px;
+      }
+   }
+}
