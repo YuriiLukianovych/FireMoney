@@ -1,6 +1,7 @@
 const linksHeader = document.querySelectorAll('[data-link]')
 const linksFooter = document.querySelectorAll('[data-link-2]')
 const anchors = [...linksHeader, ...linksFooter];
+const header = document.querySelector('.header');
 
 // получаем координаты элемента в контексте документа
 function getCoords(elem) {
@@ -14,6 +15,8 @@ function getCoords(elem) {
   };
 }
 
+// визначаэмо висоту хедера
+const headerHeight = getCoords(header).bottom - getCoords(header).top;
 
 for (let anchor of anchors) {
   anchor.addEventListener('click', e => {
@@ -27,7 +30,7 @@ for (let anchor of anchors) {
 
     
     window.scrollTo({
-    top: blockIDcoords.top - 70, // мінус висота хедера, який фіксований і перекриває початок секції
+    top: blockIDcoords.top - headerHeight, // мінус висота хедера, який фіксований і перекриває початок секції
     behavior: "smooth"
     })
   })
