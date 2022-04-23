@@ -34,6 +34,13 @@ if (navigator.userAgent.indexOf('Firefox') !== -1) {
     })
 }
 
+// функція форматування валюти -  для виводу числа валюти з пробілами:
+// замість 12500 виведе 12 500
+function getСurrencyValue(number) {
+    return Intl.NumberFormat('ru-RU').format(number);
+}
+
+
 //  ---------------- initial CALCULATOR before changes in RANGE INPUT -------------------
 document.addEventListener('DOMContentLoaded', () => { // Структура сторінки загружена і готова до взаємодії
     // визначаємо поточну дату
@@ -99,7 +106,7 @@ rangeList.forEach(range => {
         // ------------------------------- CALCULATOR after changes in RANGE INPUT --------------------------------
 
             // calculatorStartSum
-            calculatorStartSum.textContent = `${rangeList[0].value} грн`;
+            calculatorStartSum.textContent = `${getСurrencyValue(rangeList[0].value)} грн`;
 
             // calculatorFinishSum
             let finishSumm = +rangeList[0].value;
@@ -109,7 +116,7 @@ rangeList.forEach(range => {
                 finishSumm = finishSumm + finishSumm*0.01;
                 console.log(finishSumm);
             }
-            calculatorFinishSum.textContent = `${Math.trunc(finishSumm)} грн`;
+            calculatorFinishSum.textContent = `${getСurrencyValue(Math.trunc(finishSumm))} грн`;
 
             // calculatorDate
             const date = new Date();
@@ -119,6 +126,6 @@ rangeList.forEach(range => {
             calculatorDate.textContent = `${date2.getUTCDate()} ${MONTHS[date2.getUTCMonth()]} ${date2.getUTCFullYear()}`;
 
             // calculatorPayment
-            calculatorPayment.textContent = `${Number.parseInt(calculatorFinishSum.textContent) - Number.parseInt(calculatorStartSum.textContent)} грн`;
+            calculatorPayment.textContent = `${getСurrencyValue(Math.trunc(finishSumm) - rangeList[0].value)} грн`;
 })
 })
