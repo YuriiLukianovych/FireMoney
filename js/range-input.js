@@ -7,6 +7,22 @@ const calculatorStartSum = document.querySelector('.calc-start-sum');
 const calculatorFinishSum = document.querySelector('.calc-finish-sum');
 const calculatorDate = document.querySelector('.calc-date');
 const calculatorPayment = document.querySelector('.calc-payment');
+// об'єкт з назвами місяців для виведення в html-розмітку
+    const MONTHS = {
+        0: 'января',
+        1: 'февраля',
+        2: 'марта',
+        3: 'апреля',
+        4: 'мая',
+        5: 'июня',
+        6: 'июля',
+        7: 'августа',
+        8: 'сентября',
+        9: 'октября',
+        10: 'ноября',
+        11: 'декабря'
+}
+    
 
 // Якщо користувач використовує браузер Firefox, то приховувати для нього блок .range-progress
 // Поверх нього не можливо поставити дефолтний повзунок(thumb) у Firefox
@@ -17,6 +33,20 @@ if (navigator.userAgent.indexOf('Firefox') !== -1) {
         el.style.display = 'none';
     })
 }
+
+//  ---------------- initial CALCULATOR before changes in RANGE INPUT -------------------
+document.addEventListener('DOMContentLoaded', () => { // Структура сторінки загружена і готова до взаємодії
+    // визначаємо поточну дату
+    const date = new Date();
+
+    // визначаємо дату повернення
+    //через 8 днів - початкове значення за замовчуванням
+    const ms = date.getTime() + 8*24*60*60*1000; // мілісекунд
+    const endDate = new Date(ms);
+
+    // виводимо дату повернення
+    calculatorDate.textContent = `${endDate.getUTCDate()} ${MONTHS[endDate.getUTCMonth()]} ${endDate.getUTCFullYear()}`;
+})
 
 rangeList.forEach(range => {
     range.addEventListener('input', e => {
@@ -66,7 +96,7 @@ rangeList.forEach(range => {
                 }
             }
         })
-        // ------------------------------- CALCULATOR --------------------------------
+        // ------------------------------- CALCULATOR after changes in RANGE INPUT --------------------------------
 
             // calculatorStartSum
             calculatorStartSum.textContent = `${rangeList[0].value} грн`;
@@ -85,20 +115,7 @@ rangeList.forEach(range => {
             const date = new Date();
             const endDate = date.getTime() + +rangeList[1].value*24*60*60*1000;
             const date2 = new Date(endDate);
-            const MONTHS = {
-                0: 'января',
-                1: 'февраля',
-                2: 'марта',
-                3: 'апреля',
-                4: 'мая',
-                5: 'июня',
-                6: 'июля',
-                7: 'августа',
-                8: 'сентября',
-                9: 'октября',
-                10: 'ноября',
-                11: 'декабря'
-            }
+
             calculatorDate.textContent = `${date2.getUTCDate()} ${MONTHS[date2.getUTCMonth()]} ${date2.getUTCFullYear()}`;
 
             // calculatorPayment
