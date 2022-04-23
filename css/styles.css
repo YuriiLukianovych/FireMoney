@@ -723,6 +723,7 @@ body {
     text-align: left;
     font-size: 25px;
     margin-bottom: 110px;
+    max-width: 420px;
   }
   .hero__note {
     text-align: left;
