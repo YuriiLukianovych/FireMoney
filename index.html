@@ -38,7 +38,7 @@
                     <li class="menu-list__item"><a href="#faq" class="menu-list__link" data-link>Вопросы-ответы</a></li>
                 </ul>
             </nav>
-            <button class="header-btn" type="button">Вход в<span> личный</span> кабинет</button>
+            <button class="header-btn" type="button">Вход в<span>личный</span> кабинет</button>
             <button type="button" class="menu-button" aria-controls="menu-container" data-menu-button>
                 <svg class="menu-button-icon" width="20" height="17" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="images/icons/sprite.svg#menu-burger"></use>
@@ -467,10 +467,10 @@
                     <picture>
                         <source srcset="./images/get-now/girl-2-mobile.png 1x,
                                         ./images/get-now/girl-2-mobile@2x.png 2x"
-                            media="(min-width: 320px) and (max-width: 1299px)">
+                            media="(min-width: 320px) and (max-width: 1299px)" width="360">
                         <source srcset="./images/get-now/girl-2-mobile.webp 1x,
                                         ./images/get-now/girl-2-mobile@2x.webp 2x"
-                            media="(min-width: 320px) and (max-width: 1299px)" type="image/webp">
+                            media="(min-width: 320px) and (max-width: 1299px)" type="image/webp"  width="360">
                         <source srcset="./images/get-now/girl-2-desktop.png 1x,
                                         ./images/get-now/girl-2-desktop@2x.png 2x"
                             media="(min-width: 1300px)">
@@ -548,15 +548,18 @@
                             Ducimus deserunt alias beatae odit veniam aspernatur!</li>
                     </ul>
                 </div>
-                <div class="footer-cards">
-                    <h3 class="footer-cards__title">Какие карты принимаем</h3>
-                    <ul class="footer-cards__list">
-                        <li class="footer-cards__item"><img src="images/footer/01.png" alt="card1"></li>
-                        <li class="footer-cards__item"><img src="images/footer/02.png" alt="card2"></li>
-                        <li class="footer-cards__item"><img src="images/footer/03.png" alt="card3"></li>
-                    </ul>
+                <div class="footer-cards__wrapper">
+                    <div class="footer-cards">
+                        <h3 class="footer-cards__title">Какие карты принимаем</h3>
+                        <ul class="footer-cards__list">
+                            <li class="footer-cards__item"><img src="images/footer/01.png" alt="card1"></li>
+                            <li class="footer-cards__item"><img src="images/footer/02.png" alt="card2"></li>
+                            <li class="footer-cards__item"><img src="images/footer/03.png" alt="card3"></li>
+                        </ul>
+                    </div>
+                    <h3 class="footer__note">Мы явлемся обработчиками <span>персональных данных</span></h3>
                 </div>
-                <h3 class="footer__note">Мы явлемся обработчиками <span>персональных данных</span></h3>
+                
                 <div class="agreements">
                     <h2 class="footer__title">Соглашения и условия</h2>
                     <p class="agreements__info">

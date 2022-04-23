@@ -137,7 +137,7 @@
 // tablet
 @media screen and (min-width: 768px) {
     .header{
-        height: 100px;
+        height: 85px;
     }
     .header-btn{
         width: 176px;
@@ -191,6 +191,25 @@
             font-size: 14px;
             line-height: 1.214;
             padding-bottom: 5px;
+        }
+    }
+}
+
+// desktop ----------------------------------------- desktop ------------------
+
+@media screen and (min-width: 1300px) {
+    .header{
+
+        &-btn{
+            width: 242px;
+            span{
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+        }
+        .menu-list__link{
+            font-size: 18px;
+            line-height: 1.167;
         }
     }
 }

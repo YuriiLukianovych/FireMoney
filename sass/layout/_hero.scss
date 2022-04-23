@@ -90,14 +90,14 @@
 // tablet
 @media screen and (min-width: 768px) {
     .hero{
-        padding-top: 130px;
+        padding-top: 115px;
         position: relative;
         background: url(../images/hero/sun-tablet.png) calc(50% - 170px) calc(50% + 120px) no-repeat, 
                     url(../images/footer/fire-main.png) calc(50% - 525px) center no-repeat,
                     linear-gradient(to right, #ffa047 0%, #ffc93e 100%);
                     
         &-subtitle{
-            width: 382px;
+            max-width: 382px;
             padding: 15px 23px 15px 75px;
             margin-bottom: 25px;
             margin-left: auto;
@@ -121,6 +121,54 @@
             left: calc(50% - 390px);
             z-index: 99;
             pointer-events: none;
+        }
+    }
+}
+
+// desktop ----------------------------- desktop --------------
+
+@media screen and (min-width: 1300px) {
+    .hero{
+        padding-bottom: 68px;
+
+        background: url(../images/hero/sun-desktop.png) calc(50% + 50px) calc(50% - 15px) no-repeat,
+                    url(../images/hero/lines.svg) calc(50% - 520px) calc(50% + 80px) no-repeat,
+                    url(../images/footer/fire-01.png) calc(50% - 525px) center no-repeat,
+                    url(../images/footer/fire-02.png) calc(50% - 525px) center no-repeat,
+                    url(../images/footer/fire-main.png) calc(50% - 525px) center no-repeat,
+                    url(../images/footer/fire-04.png) calc(50% - 525px) center no-repeat,
+                    linear-gradient(to right, #ffa047 0%, #ffc93e 100%);
+
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__info{
+            max-width: 490px;
+            padding-top: 80px;
+        }
+        &-subtitle {
+            margin-bottom: 20px;
+            margin-left: 0;
+        }
+        &__title {
+            text-align: left;
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        &__text {
+            text-align: left;
+            font-size: 25px;
+            margin-bottom: 110px;
+        }
+        &__note{
+            text-align: left;
+            max-width: 312px;
+        }
+        &__image{
+            left: calc(50% - 245px);
         }
     }
 }

@@ -87,3 +87,22 @@
    }
 
 }
+
+// desktop ------------------------ desktop ----------------
+
+@media screen and (min-width: 1300px) {
+   .clients{
+      background: url(../images/clients/map.svg) calc(50% - 250px) center/contain no-repeat,
+                  url(../images/footer/fire-main.png) calc(50% + 150px) center/contain no-repeat,
+                  url(../images/footer/fire-main.png) calc(50% + 200px) center/contain no-repeat,
+                  linear-gradient(81.55deg, #ffa24a 33.93%, #ffa846 73.78%);
+
+      &_list{
+         margin-left: -27px;
+      }
+      &__item{
+         margin-left: 27px;
+         flex-basis: calc(100% / 3 - 27px);
+      }
+   }
+}

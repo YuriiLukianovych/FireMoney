@@ -93,37 +93,30 @@
          margin-left: auto;
          margin-right: auto;
       }
-   
-      // .best-deal__item
-   
-      &__item {}
-   
-      // .best-deal__title
-   
-      &__title {}
-   
-      // .best-deal__sum
-   
-      &__sum {}
-   
-      // .best-deal__days
-   
-      &__days {}
-   
-      // .best-deal__info
-   
-      &__info {}
-   
-      // .best-deal__date
-   
-      &__date {}
-   
-      // .best-deal__return-sum
-   
-      &__return-sum {}
-   
-      // .best-deal__note
-   
-      &__note {}
+   }
+}
+
+// desktop ------------------------------ desktop -------------
+
+@media screen and (min-width: 1300px) {
+   .best-deal{
+      padding-bottom: 0;
+
+      .container{
+         padding-bottom: 51px;
+         border-bottom: 1px solid rgba(69, 81, 95, 0.05);
+      }
+
+      &__list{
+         margin-top: 36px;
+         margin-bottom: 33px;
+         display: flex;
+         width: 100%;
+         margin-left: -28px;
+      }
+      &__item{
+         margin-left: 28px;
+         flex-basis: calc(100% / 3 - 28px);
+      }
    }
 }

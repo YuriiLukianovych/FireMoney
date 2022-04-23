@@ -73,3 +73,20 @@
       }
    }
 }
+
+// desktop ------------------------------- desktop --------------------
+
+@media screen and (min-width: 1300px) {
+   .wallets{
+
+      &__list{
+         max-width: 840px;
+         margin-left: auto;
+         margin-right: auto;
+      }
+      &__item{
+         width: 140px;
+         height: 133px;
+      }
+   }
+}
