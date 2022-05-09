@@ -381,13 +381,18 @@ body {
 .header {
   height: 70px;
   background-color: #ffbf40;
-  border-bottom: 1px solid #FF7B00;
+  border-bottom: 1px solid #ff7b00;
   box-shadow: 0 3px 5px #ffbf40;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
+  transition: transform 250ms linear;
+}
+
+.header.hide {
+  transform: translateY(-70px);
 }
 
 .header .container {
@@ -429,7 +434,7 @@ body {
 
 .menu-list__item {
   padding-left: 15px;
-  border-left: 3px solid #FF7B00;
+  border-left: 3px solid #ff7b00;
 }
 
 .menu-list__item:not(:last-child) {
@@ -448,7 +453,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FF7B00;
+  background-color: #ff7b00;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 300ms ease-out;
@@ -456,7 +461,7 @@ body {
   font-size: 12px;
   line-height: 1.167;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: auto;
 }
 
@@ -482,7 +487,7 @@ body {
 }
 
 .menu-button:hover, .menu-button:focus {
-  outline: 2px solid #FF7B00;
+  outline: 2px solid #ff7b00;
 }
 
 .menu-button.is-open .icon-menu {
@@ -512,6 +517,9 @@ body {
 @media screen and (min-width: 768px) {
   .header {
     height: 85px;
+  }
+  .header.hide {
+    transform: translateY(-85px);
   }
   .header-btn {
     width: 176px;
