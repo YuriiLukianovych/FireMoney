@@ -3,6 +3,7 @@
    padding-top: 46px;
    padding-bottom: 30px;
    &__list {
+      width: 100%;
       margin-top: 39px;
       margin-bottom: 30px;
    }
@@ -74,6 +75,11 @@
       font-size: 16px;
    }
 }
+.reviews__prev,
+.reviews__next {
+   --swiper-navigation-size: 24px;
+   --swiper-theme-color: #ff9204;
+}
 
 // tablet --------------------------------------- tablet --------------------------------
 
@@ -84,12 +90,13 @@
 
       &__list {
          margin-bottom: 39px;
-         display: flex;
-         margin-left: -15px;
+         // display: flex;
+         // gap: 10px;
+         // margin-left: -15px;
       }
       &__item {
-         margin-left: 15px;
-         flex-basis: calc(100% / 2 - 15px);
+         // margin-left: 15px;
+         // flex-basis: calc(100% / 2 - 15px);
          padding: 51px 27px 47px 29px;
       }
       &__buttons {
@@ -115,12 +122,13 @@
       padding-bottom: 38px;
 
       &__list {
-         margin-left: -28px;
+         // gap: 28px;
+         // margin-left: -28px;
          margin-bottom: 35px;
       }
       &__item {
-         margin-left: 28px;
-         flex-basis: calc(100% / 3 - 28px);
+         // margin-left: 28px;
+         // flex-basis: calc(100% / 3 - 28px);
          padding: 51px 43px 47px 43px;
       }
    }

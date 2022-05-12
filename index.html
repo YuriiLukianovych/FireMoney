@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -253,129 +254,143 @@
         <section class="reviews" id="reviews">
             <div class="container">
                 <h2 class="title">Почему выбирают нас</h2>
-                <ul class="reviews__list">
-                    <li class="reviews__item">
-                        <div class="reviews__photo"><img src="./images/reviews/01.png" alt="revier`s photo"></div>
-                        <h3 class="reviews__name">Екатерина Романова, 26 лет</h3>
-                        <p class="reviews__location">г. Киев</p>
-                        <p class="reviews__text">Для того, чтобы воспользоваться услугой, вам необходимо лишь заполнить
-                            анкету на сайте, все остальное сервис сделает за
-                            вас, сэкономив вам большое количество времени и сил. Наш сервис работает со всеми клиентами,
-                            нам не важно, какая у вас
-                            кредитная</p>
-                        <div class="reviews__rating rating">
-                            <ul class="rating__list">
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#grey-star"></use>
-                                    </svg>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="reviews__item">
-                        <div class="reviews__photo"><img src="./images/reviews/02.png" alt="revier`s photo"></div>
-                        <h3 class="reviews__name">Ольга Иванова, 32 лет</h3>
-                        <p class="reviews__location">г. Харьков</p>
-                        <p class="reviews__text">Для того, чтобы воспользоваться услугой, вам необходимо лишь заполнить
-                            анкету на сайте, все
-                            остальное сервис сделает за
-                            вас, сэкономив вам большое количество времени и сил. Наш сервис работает со всеми клиентами,
-                            нам не важно, какая
-                            у вас
-                            кредитная</p>
-                        <div class="reviews__rating rating">
-                            <ul class="rating__list">
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#grey-star"></use>
-                                    </svg>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="reviews__item">
-                        <div class="reviews__photo"><img src="./images/reviews/03.png" alt="revier`s photo"></div>
-                        <h3 class="reviews__name">Сик Мун Сон, 30 лет</h3>
-                        <p class="reviews__location">г. Днепр</p>
-                        <p class="reviews__text">Для того, чтобы воспользоваться услугой, вам необходимо лишь заполнить
-                            анкету на сайте, все
-                            остальное сервис сделает за
-                            вас, сэкономив вам большое количество времени и сил. Наш сервис работает со всеми клиентами,
-                            нам не важно, какая
-                            у вас
-                            кредитная</p>
-                        <div class="reviews__rating rating">
-                            <ul class="rating__list">
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="rating__item">
-                                    <svg class="rating__icon">
-                                        <use href="./images/icons/rating-stars-sprite.svg#grey-star"></use>
-                                    </svg>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+                <div class="swiper sw1">
+                    <ul class="reviews__list swiper-wrapper">
+                        <li class="reviews__item swiper-slide">
+                            <div class="reviews__photo"><img src="./images/reviews/01.png" alt="revier`s photo"></div>
+                            <h3 class="reviews__name">Екатерина Романова, 26 лет</h3>
+                            <p class="reviews__location">г. Киев</p>
+                            <p class="reviews__text">Для того, чтобы воспользоваться услугой, вам необходимо лишь
+                                заполнить
+                                анкету на сайте, все остальное сервис сделает за
+                                вас, сэкономив вам большое количество времени и сил. Наш сервис работает со всеми
+                                клиентами,
+                                нам не важно, какая у вас
+                                кредитная</p>
+                            <div class="reviews__rating rating">
+                                <ul class="rating__list">
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#grey-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="reviews__item swiper-slide">
+                            <div class="reviews__photo"><img src="./images/reviews/02.png" alt="revier`s photo"></div>
+                            <h3 class="reviews__name">Ольга Иванова, 32 лет</h3>
+                            <p class="reviews__location">г. Харьков</p>
+                            <p class="reviews__text">Для того, чтобы воспользоваться услугой, вам необходимо лишь
+                                заполнить
+                                анкету на сайте, все
+                                остальное сервис сделает за
+                                вас, сэкономив вам большое количество времени и сил. Наш сервис работает со всеми
+                                клиентами,
+                                нам не важно, какая
+                                у вас
+                                кредитная</p>
+                            <div class="reviews__rating rating">
+                                <ul class="rating__list">
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#grey-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="reviews__item swiper-slide">
+                            <div class="reviews__photo"><img src="./images/reviews/03.png" alt="revier`s photo"></div>
+                            <h3 class="reviews__name">Сик Мун Сон, 30 лет</h3>
+                            <p class="reviews__location">г. Днепр</p>
+                            <p class="reviews__text">Для того, чтобы воспользоваться услугой, вам необходимо лишь
+                                заполнить
+                                анкету на сайте, все
+                                остальное сервис сделает за
+                                вас, сэкономив вам большое количество времени и сил. Наш сервис работает со всеми
+                                клиентами,
+                                нам не важно, какая
+                                у вас
+                                кредитная</p>
+                            <div class="reviews__rating rating">
+                                <ul class="rating__list">
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#orange-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use href="./images/icons/rating-stars-sprite.svg#grey-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev reviews__prev"></div>
+                    <div class="swiper-button-next reviews__next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
                 <div class="reviews__buttons">
                     <button class="btn" type="button">Оформить заявку</button>
                     <button class="btn-sec" type="button">Все отзывы</button>
@@ -711,6 +726,7 @@
     <script src="js/scroll-into-anchor.js" type="module"></script>
     <script src="js/best-deal.js" type="module"></script>
     <script src="js/smart-header.js" type="module"></script>
+    <script src="js/swiper.js" type="module"></script>
 </body>
 
 </html>
