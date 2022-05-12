@@ -6,19 +6,19 @@
    background-repeat: no-repeat;
    background-position: center bottom;
    background-size: 380px 326px;
-   
+
    @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
-   screen and (min-resolution: 192dpi) and (min-width: 320px),
-   screen and (min-resolution: 2dppx) and (min-width: 320px) {
+      screen and (min-resolution: 192dpi) and (min-width: 320px),
+      screen and (min-resolution: 2dppx) and (min-width: 320px) {
       background-image: url(../images/get-now/sun-mobile@2x.png);
    }
 
-   &__note{
+   &__note {
       margin-top: 28px;
       margin-bottom: 28px;
 
       font-weight: 400;
-      font-size: 22px;
+      font-size: 20px;
       line-height: 1.335;
       text-align: center;
       color: #536473;
@@ -37,27 +37,26 @@
 // tablet ----------------------------- tablet --------------
 
 @media screen and (min-width: 768px) {
-   .get-now{
+   .get-now {
       padding-top: 60px;
 
       background-image: url(../images/get-now/sun-tablet.png);
       background-size: 607px 326px;
       background-position: calc(50% + 5px) bottom;
-      
+
       @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-      screen and (min-resolution: 192dpi) and (min-width: 768px),
-      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+         screen and (min-resolution: 192dpi) and (min-width: 768px),
+         screen and (min-resolution: 2dppx) and (min-width: 768px) {
          background-image: url(../images/get-now/sun-tablet@2x.png);
       }
 
-      &__note{
+      &__note {
          margin-top: 26px;
          margin-bottom: 26px;
          font-size: 27px;
       }
-      &__img{
-
-         img{
+      &__img {
+         img {
             margin: 0 auto;
          }
       }
@@ -67,31 +66,31 @@
 // desktop -------------------------- desktop ----------------
 
 @media screen and (min-width: 1300px) {
-   .get-now{
+   .get-now {
       padding-bottom: 62px;
       position: relative;
 
       background-image: url(../images/get-now/sun-desktop.png);
       background-size: 607px 326px;
       background-position: calc(50% + 320px) bottom;
-      
+
       @media screen and (min-device-pixel-ratio: 2) and (min-width: 1300px),
-      screen and (min-resolution: 192dpi) and (min-width: 1300px),
-      screen and (min-resolution: 2dppx) and (min-width: 1300px) {
+         screen and (min-resolution: 192dpi) and (min-width: 1300px),
+         screen and (min-resolution: 2dppx) and (min-width: 1300px) {
          background-image: url(../images/get-now/sun-desktop@2x.png);
       }
 
-      &__img{
+      &__img {
          position: absolute;
          left: 50%;
          bottom: 0;
       }
-      &__note{
+      &__note {
          text-align: left;
          max-width: 480px;
       }
 
-      .title{
+      .title {
          text-align: left;
       }
       .btn {

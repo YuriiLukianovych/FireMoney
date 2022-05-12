@@ -25,8 +25,8 @@
 .logo {
    display: block;
    &-icon {
-      width: 126px;
-      height: 24px;
+      width: 102px;
+      height: 18px;
    }
 }
 
@@ -63,12 +63,12 @@
    &__link {
       color: #fff;
       font-weight: 600;
-      font-size: 36px;
+      font-size: 28px;
    }
 }
 
 .header-btn {
-   width: 155px;
+   width: 135px;
    height: 39px;
 
    display: flex;
@@ -109,7 +109,7 @@
    align-items: center;
    justify-content: center;
 
-   margin-left: 15px;
+   margin-left: 10px;
    &:hover,
    &:focus {
       outline: 2px solid #ff7b00;
@@ -145,6 +145,13 @@
       height: 85px;
       &.hide {
          transform: translateY(-85px);
+      }
+   }
+   .logo {
+      display: block;
+      &-icon {
+         width: 126px;
+         height: 24px;
       }
    }
    .header-btn {

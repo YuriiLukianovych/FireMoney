@@ -1,14 +1,14 @@
-.btn-sec{
-   border: 1px solid #C9D2DD;
+.btn-sec {
+   border: 1px solid #c9d2dd;
    background-color: transparent;
    border-radius: 8px;
    padding: 21px 31px;
 
    font-weight: 500;
-   font-size: 16px;
+   font-size: 14px;
    line-height: 1.186;
-   text-transform: uppercase;  
-   color: #45515F;
+   text-transform: uppercase;
+   color: #45515f;
 
    cursor: pointer;
    transition: transform 300ms ease-out;
@@ -17,9 +17,12 @@
    &:focus {
       transform: scale(1.05);
    }
+   @media screen and (min-width: 768px) {
+      font-size: 16px;
+   }
 }
 
-.btn-sec--white{
+.btn-sec--white {
    border: 1px solid #fefefe;
    color: #fefefe;
 }

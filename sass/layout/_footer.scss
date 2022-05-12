@@ -1,57 +1,60 @@
 .footer {
    padding-top: 32px;
    padding-bottom: 39px;
-   background: url(../images/footer/fire-main.png) calc(50% - 250px) center no-repeat, linear-gradient(to right, #ffa047 0%, #ffc43f 100%);
+   background: url(../images/footer/fire-main.png) calc(50% - 250px) center
+         no-repeat,
+      linear-gradient(to right, #ffa047 0%, #ffc43f 100%);
 
    &__title {
       font-weight: 500;
       font-size: 18px;
       line-height: 1.167;
       text-transform: uppercase;
-      
-      color: #FFFFFF;
+
+      color: #ffffff;
    }
-   &__note{
+   &__note {
       border: 1px solid #ffffff;
-      padding: 22px 58px;
+      padding: 22px 15px;
       font-weight: 300;
       font-size: 18px;
       line-height: 21px;
       text-align: center;
-      color: #FFFFFF;
-      
+      color: #ffffff;
+
       margin-bottom: 31px;
 
-      span{
+      span {
          text-decoration: underline;
       }
    }
 
-   .logo{
+   .logo {
       text-align: center;
    }
 }
-.footer-top{
+.footer-top {
    padding-bottom: 32px;
 }
 .contact-list {
    margin-top: 24px;
    &__item {
-      &:not(:last-child){
+      &:not(:last-child) {
          margin-bottom: 24px;
       }
    }
-   &__link{
+   &__link {
       display: flex;
       align-items: center;
       justify-content: center;
 
-      color: #FFFFFF;
+      color: #ffffff;
 
       transition: all 500ms ease-in-out;
-      &:hover, &:focus{
+      &:hover,
+      &:focus {
          color: #ff7b00;
-         .contact-list__icon{
+         .contact-list__icon {
             fill: #ff7b00;
          }
       }
@@ -66,7 +69,7 @@
          line-height: 1.182;
       }
    }
-   &__icon{
+   &__icon {
       width: 21px;
       height: 21px;
       fill: #fff;
@@ -78,8 +81,8 @@
 // footer-navigation
 .footer-navigation {
    margin-top: 32px;
-   padding-top: 29px;
-   padding-bottom: 34px;
+   padding-top: 20px;
+   padding-bottom: 22px;
    border-top: 1px solid rgba(255, 255, 255, 0.2);
    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -90,7 +93,7 @@
    &__item {
       position: relative;
       padding-bottom: 5px;
-      &::after{
+      &::after {
          content: '';
          width: 100%;
          height: 3px;
@@ -103,20 +106,20 @@
          transform: scaleX(0);
          transition: transform 500ms ease-in-out;
       }
-      &:hover::after{
+      &:hover::after {
          transform: scaleX(1);
       }
    }
 
    &__link {
       font-weight: 500;
-      font-size: 16px;
+      font-size: 12px;
       line-height: 1.186;
-      color: #FFFFFF;
+      color: #ffffff;
       padding-bottom: 5px;
    }
 }
-.footer-main{
+.footer-main {
    padding-bottom: 34px;
 }
 .creditors-list {
@@ -126,8 +129,8 @@
       font-weight: 300;
       font-size: 12px;
       line-height: 1.167;
-      
-      color: #FFFFFF;
+
+      color: #ffffff;
    }
 }
 
@@ -139,7 +142,7 @@
       font-size: 18px;
       line-height: 1.167;
       text-align: center;
-      color: #FFFFFF;
+      color: #ffffff;
       margin-bottom: 19px;
    }
 
@@ -154,17 +157,17 @@
       align-items: center;
    }
 
-   &__item {}
+   &__item {
+   }
 }
 
 .agreements {
-
    &__info {
       font-weight: 300;
       font-size: 12px;
       line-height: 1.167;
       color: #ffffff;
-      &:nth-child(2){
+      &:nth-child(2) {
          margin-top: 23px;
       }
    }
@@ -193,7 +196,7 @@
    margin-bottom: 33px;
 
    font-weight: 400;
-   font-size: 18px;
+   font-size: 16px;
    line-height: 1.167;
    text-align: center;
    color: #ffffff;
@@ -204,7 +207,7 @@
 }
 
 .social-list {
-   margin-left: 36px;
+   margin-left: 20px;
 
    display: flex;
    align-items: center;
@@ -214,37 +217,38 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      &:not(:last-child){
-         padding-right: 23px;
+      &:not(:last-child) {
+         padding-right: 15px;
          border-right: 1px solid rgba(255, 255, 255, 0.2);
       }
-      &:not(:first-child){
-         padding-left: 23px;
+      &:not(:first-child) {
+         padding-left: 15px;
       }
    }
 
-   &__icon{
+   &__icon {
       fill: #ffffff;
       transition: all 500ms ease-in-out;
-      &:hover, &:focus{
+      &:hover,
+      &:focus {
          fill: #ff7b00;
          transform: scale(1.05);
       }
    }
 }
 
-
 // tablet -------------------------------- tablet ------------------------
 
 @media screen and (min-width: 768px) {
-   .footer{
+   .footer {
       padding-top: 42px;
       padding-bottom: 49px;
-      background: url(../images/footer/fire-main.png) calc(50% - 430px) calc(100% + 100px) no-repeat,
-                  linear-gradient(to right, #ffa047 0%, #ffc43f 100%);
+      background: url(../images/footer/fire-main.png) calc(50% - 430px)
+            calc(100% + 100px) no-repeat,
+         linear-gradient(to right, #ffa047 0%, #ffc43f 100%);
 
       //footer-top ------------------
-      &-top{
+      &-top {
          padding-bottom: 29px;
 
          display: flex;
@@ -254,9 +258,9 @@
       }
 
       //footer-navigation
-      &-navigation{
+      &-navigation {
          flex-basis: 100%;
-         
+
          margin-top: 37px;
          padding-top: 29px;
          padding-bottom: 32px;
@@ -264,8 +268,9 @@
       .footer-menu-list {
          width: 478px;
          margin: 0 auto;
-         &__item {}
-      
+         &__item {
+         }
+
          &__link {
             font-size: 18px;
             line-height: 1.167;
@@ -273,32 +278,30 @@
       }
 
       //contact-list
-      .contact-list{
+      .contact-list {
          margin-top: 0;
          display: flex;
          align-items: center;
-         &__item{
-
+         &__item {
             &:not(:last-child) {
                margin-bottom: 0;
                margin-left: 95px;
             }
-            &:first-child{
+            &:first-child {
                order: 1;
             }
          }
-         &__link{
-            &.mail{
-            
+         &__link {
+            &.mail {
             }
          }
       }
 
       // footer-main --------------------------
-      &-main{
+      &-main {
          padding-bottom: 43px;
       }
-      .creditors-list{
+      .creditors-list {
          padding-bottom: 41px;
          &__item {
             font-size: 13px;
@@ -316,16 +319,17 @@
             flex-basis: 20%;
             margin-right: 37px;
          }
-      
+
          &__list {
             margin: 0;
          }
-      
-         &__item {}
+
+         &__item {
+         }
       }
 
       //.footer__note
-      &__note{
+      &__note {
          padding: 32px 0;
          margin-bottom: 39px;
       }
@@ -334,57 +338,74 @@
          &__info {
             font-size: 13px;
             line-height: 1.154;
-            &:last-child{
+            &:last-child {
                margin-top: 20px;
             }
          }
       }
 
       // footer-bottom ------------------
-      &-bottom{
+      &-bottom {
          padding-top: 43px;
-   
+
          &__left {
             display: flex;
             justify-content: center;
             align-items: center;
          }
-      
+
          &__right {
             margin-top: 33px;
             justify-content: center;
+            &.dn {
+               display: none;
+            }
          }
-         
+
          .copyright {
+            font-size: 18px;
             margin: 0;
             width: auto;
             margin-left: 28px;
          }
-         
+
          .social-list {
-            &__item {}
-         
-            &__link {}
-         
-            &__icon {}
+            margin-left: 36px;
+            &__item {
+               &:not(:last-child) {
+                  padding-right: 23px;
+               }
+               &:not(:first-child) {
+                  padding-left: 23px;
+               }
+            }
+
+            &__link {
+            }
+
+            &__icon {
+            }
          }
       }
    }
 }
 
-
 // desktop ----------------------------- desktop -----------------------------------------------
 
 @media screen and (min-width: 1300px) {
-   .footer{
+   .footer {
       padding-top: 50px;
       padding-bottom: 41px;
 
-      background: url(../images/footer/fire-01.png) calc(50% - 430px) calc(100% + 100px) no-repeat,
-                  url(../images/footer/fire-02.png) calc(50% - 430px) calc(100% + 100px) no-repeat,
-                  url(../images/footer/fire-main.png) calc(50% - 430px) calc(100% + 100px) no-repeat,
-                  url(../images/footer/fire-04.png) calc(50% - 430px) calc(100% + 100px) no-repeat,
-                  linear-gradient(to right, #ffa047 0%, #ffc43f 100%);
+      background: url(../images/footer/fire-01.png) calc(50% - 430px)
+            calc(100% + 100px) no-repeat,
+         url(../images/footer/fire-02.png) calc(50% - 430px) calc(100% + 100px)
+            no-repeat,
+         url(../images/footer/fire-main.png) calc(50% - 430px)
+            calc(100% + 100px) no-repeat,
+         url(../images/footer/fire-04.png) calc(50% - 430px) calc(100% + 100px)
+            no-repeat,
+         linear-gradient(to right, #ffa047 0%, #ffc43f 100%);
 
       //footer-top ------------------
       &-top {
@@ -396,7 +417,7 @@
       &-navigation {
          flex-basis: auto;
          order: 1;
-      
+
          margin-top: 0;
          padding-top: 0;
          padding-bottom: 0;
@@ -409,29 +430,29 @@
       }
 
       // footer-main
-      &-main{
+      &-main {
          padding-top: 30px;
          padding-bottom: 39px;
       }
       .creditors-list {
          padding-bottom: 28px;
       }
-      .footer-cards{
+      .footer-cards {
          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
          padding-top: 20px;
          padding-bottom: 24px;
          margin-right: 27px;
          flex-grow: 1;
-         &__title{
+         &__title {
             flex-basis: 25%;
             text-align: left;
          }
-         &__wrapper{
+         &__wrapper {
             display: flex;
             justify-content: space-between;
          }
       }
-      &__note{
+      &__note {
          margin-bottom: 0;
          padding-left: 145px;
          padding-right: 145px;
@@ -441,7 +462,7 @@
          &__info {
             font-size: 13px;
             line-height: 1.154;
-      
+
             &:last-child {
                margin-top: 20px;
             }
@@ -449,14 +470,14 @@
       }
 
       // footer-bottom ------------------
-      &-bottom{
+      &-bottom {
          padding-top: 18px;
 
          display: flex;
          justify-content: space-between;
          align-items: center;
 
-         &__right{
+         &__right {
             margin: 0;
          }
       }

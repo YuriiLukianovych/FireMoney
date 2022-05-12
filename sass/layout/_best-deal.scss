@@ -14,15 +14,15 @@
 
       background: rgba(255, 255, 255, 0.95);
       box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
- 
+
       border-radius: 22px;
       position: relative;
 
-      &:not(:last-child){
+      &:not(:last-child) {
          margin-bottom: 15px;
       }
 
-      .bookmark{
+      .bookmark {
          position: absolute;
          left: -22px;
          top: 14px;
@@ -31,42 +31,41 @@
 
    &__title {
       font-weight: 700;
-      font-size: 26px;
+      font-size: 20px;
       line-height: 1.27;
       border-radius: 50%;
       margin-bottom: 20px;
 
-      &.lite span{
-         color: #FFC83E;
+      &.lite span {
+         color: #ffc83e;
       }
       &.basic span {
-         color: #FF7B00;
+         color: #ff7b00;
       }
       &.pro span {
-         color: #FA5914;
+         color: #fa5914;
       }
    }
 
    &__info {
       font-weight: 300;
-      font-size: 15px;
+      font-size: 13px;
       line-height: 1.82;
       padding-left: 24px;
-      
-      
+
       background-repeat: no-repeat;
-      &:not(:last-child){
+      &:not(:last-child) {
          margin-bottom: 15px;
       }
-      span{
+      span {
          font-weight: 500;
       }
 
-      &.date{
+      &.date {
          background-image: url(../images/icons/calendar.svg);
          background-position: 4px center;
       }
-      &.cash{
+      &.cash {
          background-image: url(../images/icons/coins.svg);
          background-size: 18px 18px;
          background-position: left center;
@@ -75,7 +74,7 @@
 
    &__note {
       font-weight: 300;
-      font-size: 13px;
+      font-size: 11px;
       line-height: 1.455;
       text-align: center;
    }
@@ -93,28 +92,37 @@
          margin-left: auto;
          margin-right: auto;
       }
+      &__title {
+         font-size: 26px;
+      }
+      &__info {
+         font-size: 15px;
+      }
+      &__note {
+         font-size: 13px;
+      }
    }
 }
 
 // desktop ------------------------------ desktop -------------
 
 @media screen and (min-width: 1300px) {
-   .best-deal{
+   .best-deal {
       padding-bottom: 0;
 
-      .container{
+      .container {
          padding-bottom: 51px;
          border-bottom: 1px solid rgba(69, 81, 95, 0.05);
       }
 
-      &__list{
+      &__list {
          margin-top: 36px;
          margin-bottom: 33px;
          display: flex;
          width: 100%;
          margin-left: -28px;
       }
-      &__item{
+      &__item {
          margin-left: 28px;
          flex-basis: calc(100% / 3 - 28px);
       }

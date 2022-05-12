@@ -1,14 +1,15 @@
-.title{
+.title {
    font-weight: 600;
-   font-size: 38px;
+   font-size: 34px;
    line-height: 33px;
    text-align: center;
 
-   color: #45515F;
-   &--white{
+   color: #45515f;
+   &--white {
       color: #ffffff;
    }
    @media screen and (min-width: 768px) {
+      font-size: 38px;
       line-height: 45px;
    }
 }

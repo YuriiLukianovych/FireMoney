@@ -2,7 +2,7 @@
    background-color: #f6f9fc;
    padding-top: 46px;
    padding-bottom: 30px;
-   &__list{
+   &__list {
       margin-top: 39px;
       margin-bottom: 30px;
    }
@@ -12,19 +12,20 @@
       border-radius: 22px;
       padding: 31px 16px 41px 24px;
    }
-   &__photo{}
-   &__name{
+   &__photo {
+   }
+   &__name {
       font-weight: 700;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.167;
       margin-bottom: 19px;
       margin-top: 26px;
    }
-   &__location{
+   &__location {
       font-weight: 400;
       font-size: 15px;
       line-height: 1.2;
-      color: #93A0AB;
+      color: #93a0ab;
       padding-left: 20px;
       margin-bottom: 17px;
 
@@ -33,11 +34,11 @@
       background-position: left center;
       background-size: 12px 16px;
    }
-   &__text{
+   &__text {
       font-weight: 300;
-      font-size: 16px;
+      font-size: 12px;
       line-height: 1.186;
-      
+
       color: #536473;
       margin-bottom: 27px;
    }
@@ -48,7 +49,7 @@
          margin: 0 auto;
          margin-bottom: 13px;
       }
-      
+
       .btn-sec {
          display: block;
          margin: 0 auto;
@@ -56,8 +57,8 @@
    }
 }
 
-@media screen and (max-width: 767px){
-   .reviews__item:nth-child(2){
+@media screen and (max-width: 767px) {
+   .reviews__item:nth-child(2) {
       display: none;
    }
 }
@@ -66,26 +67,32 @@
    .reviews__item:nth-child(3) {
       display: none;
    }
+   &__name {
+      font-size: 18px;
+   }
+   &__text {
+      font-size: 16px;
+   }
 }
 
 // tablet --------------------------------------- tablet --------------------------------
 
 @media screen and (min-width: 768px) {
-   .reviews{
+   .reviews {
       padding-top: 66px;
       padding-bottom: 54px;
 
-      &__list{
+      &__list {
          margin-bottom: 39px;
          display: flex;
          margin-left: -15px;
       }
-      &__item{
+      &__item {
          margin-left: 15px;
          flex-basis: calc(100% / 2 - 15px);
          padding: 51px 27px 47px 29px;
       }
-      &__buttons{
+      &__buttons {
          display: flex;
          justify-content: center;
 
@@ -93,7 +100,7 @@
             margin: 0;
             margin-right: 10px;
          }
-         
+
          .btn-sec {
             margin: 0;
          }
@@ -107,11 +114,11 @@
    .reviews {
       padding-bottom: 38px;
 
-      &__list{
+      &__list {
          margin-left: -28px;
          margin-bottom: 35px;
       }
-      &__item{
+      &__item {
          margin-left: 28px;
          flex-basis: calc(100% / 3 - 28px);
          padding: 51px 43px 47px 43px;

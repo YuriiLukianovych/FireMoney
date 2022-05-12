@@ -14,32 +14,32 @@
       padding: 25px 18px;
 
       position: relative;
-      &--open{
-         background: linear-gradient(268.87deg, #FFC83E -5.09%, #FF7347 51.96%);
+      &--open {
+         background: linear-gradient(268.87deg, #ffc83e -5.09%, #ff7347 51.96%);
       }
-      &:not(:last-child){
+      &:not(:last-child) {
          margin-bottom: 4px;
       }
    }
 
    &__title {
       font-weight: 600;
-      font-size: 16px;
+      font-size: 12px;
       line-height: 1.188;
-      &--open{
+      &--open {
          color: #ffffff;
       }
    }
 
    &__text {
       font-weight: 300;
-      font-size: 14px;
+      font-size: 11px;
       line-height: 1.214;
-      color: #FFFFFF;
+      color: #ffffff;
       margin-top: 14px;
 
       display: none;
-      &--visible{
+      &--visible {
          display: block;
       }
    }
@@ -55,7 +55,7 @@
       right: 18px;
       background-image: url(../images/icons/faq/down.svg);
       transition: background-image 250ms ease-in-out;
-      &--open{
+      &--open {
          background-image: url(../images/icons/faq/up.svg);
       }
    }
@@ -68,17 +68,17 @@
       padding-top: 57px;
       padding-bottom: 67px;
 
-      &__list{
+      &__list {
          margin-top: 37px;
       }
-      &__item{
+      &__item {
          padding: 21px 28px 25px 33px;
       }
-      &__title{
+      &__title {
          font-size: 20px;
          line-height: 1.2;
       }
-      &__text{
+      &__text {
          margin-top: 17px;
          font-size: 16px;
          line-height: 1.186;
@@ -89,7 +89,7 @@
 // desktop ---------------------------- desktop ---------------
 
 @media screen and (min-width: 1300px) {
-   .faq{
+   .faq {
       padding-top: 59px;
       padding-bottom: 69px;
    }
