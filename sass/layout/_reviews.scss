@@ -5,12 +5,13 @@
    .sw1 {
       margin-top: 39px;
       margin-bottom: 30px;
-      padding-bottom: 10px;
+      // padding-bottom: 10px;
    }
    &__list {
       width: 100%;
    }
    &__item {
+      // height: auto;
       background-color: rgba(255, 255, 255, 0.95);
       box-shadow: 2px 2px 2px rgba(84, 104, 123, 0.05);
       border-radius: 22px;
@@ -59,11 +60,17 @@
          margin: 0 auto;
       }
    }
+   .sw1 .swiper-slide {
+      height: auto;
+   }
 }
 @media screen and (max-width: 767px) {
    .swiper-button-next.reviews__next,
    .swiper-button-prev.reviews__prev {
       display: none;
+   }
+   .sw1 {
+      padding-bottom: 10px;
    }
 }
 @media screen and (max-width: 1299px) {
@@ -79,10 +86,10 @@
    --swiper-navigation-size: 24px;
    --swiper-theme-color: #ff9204;
 }
-.sw1 .swiper-scrollbar.sw1-scrollbar {
-   bottom: 3px;
+.swiper .swiper-scrollbar.sw-scroll {
+   bottom: 0;
 }
-.sw1 .swiper-scrollbar.sw1-scrollbar .swiper-scrollbar-drag {
+.swiper .swiper-scrollbar .swiper-scrollbar-drag {
    background: rgba(255, 146, 4, 0.75);
 }
 // tablet --------------------------------------- tablet --------------------------------
