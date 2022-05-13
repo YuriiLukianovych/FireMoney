@@ -389,7 +389,7 @@
                     <div class="swiper-button-next reviews__next"></div>
 
                     <!-- If we need scrollbar -->
-                    <!-- <div class="swiper-scrollbar"></div> -->
+                    <div class="swiper-scrollbar sw1-scrollbar"></div>
                 </div>
                 <div class="reviews__buttons">
                     <button class="btn" type="button">Оформить заявку</button>
@@ -400,44 +400,52 @@
         <section class="clients">
             <div class="container">
                 <h2 class="title title--white">Наши клиенты</h2>
-                <ul class="clients__list">
-                    <li class="clients__item">
-                        <div class="clients__image">
-                            <svg class="clients__icon">
-                                <use href="./images/clients/clients-sprite.svg#01"></use>
-                            </svg>
-                        </div>
-                        <div class="clients__info">
-                            <h3 class="clients__name">Екатерина Романова</h3>
-                            <p class="clients__text">Получила отказ 45 сек назад</p>
-                            <p class="clients__location">г. Киев</p>
-                        </div>
-                    </li>
-                    <li class="clients__item">
-                        <div class="clients__image">
-                            <svg class="clients__icon">
-                                <use href="./images/clients/clients-sprite.svg#02"></use>
-                            </svg>
-                        </div>
-                        <div class="clients__info">
-                            <h3 class="clients__name">Игорь Николаев</h3>
-                            <p class="clients__text">Взял 5 000 грн 2 мин назад</p>
-                            <p class="clients__location">г. Одесса</p>
-                        </div>
-                    </li>
-                    <li class="clients__item">
-                        <div class="clients__image">
-                            <svg class="clients__icon">
-                                <use href="./images/clients/clients-sprite.svg#03"></use>
-                            </svg>
-                        </div>
-                        <div class="clients__info">
-                            <h3 class="clients__name">Светлана Борисенко</h3>
-                            <p class="clients__text">Внес на счет 12 000 грн 45 сек назад</p>
-                            <p class="clients__location">г. Киев</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="swiper sw1">
+                    <ul class="clients__list swiper-wrapper">
+                        <li class="clients__item swiper-slide">
+                            <div class="clients__image">
+                                <svg class="clients__icon">
+                                    <use href="./images/clients/clients-sprite.svg#01"></use>
+                                </svg>
+                            </div>
+                            <div class="clients__info">
+                                <h3 class="clients__name">Екатерина Романова</h3>
+                                <p class="clients__text">Получила отказ 45 сек назад</p>
+                                <p class="clients__location">г. Киев</p>
+                            </div>
+                        </li>
+                        <li class="clients__item swiper-slide">
+                            <div class="clients__image">
+                                <svg class="clients__icon">
+                                    <use href="./images/clients/clients-sprite.svg#02"></use>
+                                </svg>
+                            </div>
+                            <div class="clients__info">
+                                <h3 class="clients__name">Игорь Николаев</h3>
+                                <p class="clients__text">Взял 5 000 грн 2 мин назад</p>
+                                <p class="clients__location">г. Одесса</p>
+                            </div>
+                        </li>
+                        <li class="clients__item swiper-slide">
+                            <div class="clients__image">
+                                <svg class="clients__icon">
+                                    <use href="./images/clients/clients-sprite.svg#03"></use>
+                                </svg>
+                            </div>
+                            <div class="clients__info">
+                                <h3 class="clients__name">Светлана Борисенко</h3>
+                                <p class="clients__text">Внес на счет 12 000 грн 45 сек назад</p>
+                                <p class="clients__location">г. Киев</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev reviews__prev"></div>
+                    <div class="swiper-button-next reviews__next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar sw1-scrollbar"></div>
+                </div>
             </div>
         </section>
         <section class="service" id="service">
