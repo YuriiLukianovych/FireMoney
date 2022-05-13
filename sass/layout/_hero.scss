@@ -85,7 +85,26 @@
       transform: scale(1) rotate(0deg);
    }
 }
-
+// 380px
+@media screen and (min-width: 380px) {
+   .hero {
+      &-subtitle {
+         padding: 14px 25px 14px 75px;
+         &__text {
+            font-size: 20px;
+         }
+      }
+      &__title {
+         font-size: 36px;
+      }
+      &__text {
+         font-size: 20px;
+      }
+      &__note {
+         font-size: 14px;
+      }
+   }
+}
 // tablet
 @media screen and (min-width: 768px) {
    .hero {

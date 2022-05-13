@@ -144,20 +144,31 @@
 .is-blocked {
    overflow: hidden;
 }
-
+// 380px
+@media screen and (min-width: 380px) {
+   .logo {
+      display: block;
+      &-icon {
+         width: 126px;
+         height: 24px;
+      }
+   }
+   .menu-list__link {
+      font-size: 36px;
+   }
+   .header-btn {
+      width: 155px;
+   }
+   .menu-button {
+      margin-left: 15px;
+   }
+}
 // tablet
 @media screen and (min-width: 768px) {
    .header {
       height: 85px;
       &.hide {
          transform: translateY(-90px);
-      }
-   }
-   .logo {
-      display: block;
-      &-icon {
-         width: 126px;
-         height: 24px;
       }
    }
    .header-btn {

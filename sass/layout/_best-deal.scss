@@ -79,7 +79,20 @@
       text-align: center;
    }
 }
-
+//380px
+@media screen and (min-width: 380px) {
+   .best-deal {
+      &__title {
+         font-size: 26px;
+      }
+      &__info {
+         font-size: 15px;
+      }
+      &__note {
+         font-size: 13px;
+      }
+   }
+}
 //tablet
 @media screen and (min-width: 768px) {
    .best-deal {
@@ -91,15 +104,6 @@
          width: 425px;
          margin-left: auto;
          margin-right: auto;
-      }
-      &__title {
-         font-size: 26px;
-      }
-      &__info {
-         font-size: 15px;
-      }
-      &__note {
-         font-size: 13px;
       }
    }
 }

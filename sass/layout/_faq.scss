@@ -60,7 +60,17 @@
       }
    }
 }
-
+//380px
+@media screen and (min-width: 380px) {
+   .faq {
+      &__title {
+         font-size: 16px;
+      }
+      &__text {
+         font-size: 14px;
+      }
+   }
+}
 // tablet --------------------------------------- tablet --------------------------------
 
 @media screen and (min-width: 768px) {

@@ -30,7 +30,17 @@
       color: #536473;
    }
 }
-
+// 380px
+@media screen and (min-width: 380px) {
+   .service {
+      &__title {
+         font-size: 24px;
+      }
+      &__info {
+         font-size: 16px;
+      }
+   }
+}
 // tablet --------------------------------------- tablet --------------------------------
 
 @media screen and (min-width: 768px) {
@@ -45,11 +55,7 @@
          padding: 44px 52px 47px 48px;
       }
       &__title {
-         font-size: 24px;
          margin-bottom: 31px;
-      }
-      &__info {
-         font-size: 16px;
       }
    }
 }
