@@ -111,7 +111,6 @@ rangeList.forEach(range => {
 
       // calculatorFinishSum
       let finishSumm = +rangeList[0].value;
-      console.log(typeof finishSumm);
       for (let i = 1; i <= +rangeList[1].value; i++) {
          finishSumm = finishSumm + finishSumm * 0.01;
       }

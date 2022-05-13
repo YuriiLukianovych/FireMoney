@@ -19,5 +19,12 @@ window.addEventListener('scroll', () => {
       header.classList.remove('hide');
    }
 
+   if (scrollPosition() === 0 && !header.classList.contains('header__top')) {
+      header.classList.add('header__top');
+   }
+   if (scrollPosition() > 500 && header.classList.contains('header__top')) {
+      header.classList.remove('header__top');
+   }
+
    lastScroll = scrollPosition();
 });
