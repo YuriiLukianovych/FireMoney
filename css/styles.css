@@ -1583,8 +1583,8 @@ body {
 }
 
 .faq__item--open {
-  background-color: #ff7347;
-  box-shadow: inset -100px 0px 80px -5px #ffc83e;
+  background-color: rgba(255, 115, 71, 0.9);
+  box-shadow: inset -100px 0px 80px -5px rgba(255, 200, 62, 0.9);
 }
 
 .faq__item:not(:last-child) {
